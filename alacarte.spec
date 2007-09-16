@@ -1,6 +1,6 @@
 Name:           alacarte
 Version:        0.11.3
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Simple menu editor for Gnome
 
 Group:          System/Configuration/Other
@@ -46,18 +46,6 @@ mkdir -p %buildroot%_prefix/lib
 mv %buildroot%_libdir/python* %buildroot%_prefix/lib
 %endif
 
-mkdir -p %buildroot/%_menudir
-cat > %buildroot/%_menudir/%name << EOF
-
-?package(%name): \
-        command="%_bindir/%name" \
-        needs="X11" \
-        section="System/Configuration/Other" \
-        icon="%name.png" \
-        title="Alacarte" \
-        longtitle="%summary" \
-	xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --add-category="GNOME" \
   --add-category="X-MandrivaLinux-System-Configuration-Other" \
@@ -86,7 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*
 %{_datadir}/%name/*
 %{_datadir}/icons/*
-%{_menudir}/%{name}
 %{_iconsdir}/*/%name.png
 %{_iconsdir}/%name.png
 
