@@ -1,6 +1,6 @@
 Name:           alacarte
 Version:        0.11.3
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Simple menu editor for Gnome
 
 Group:          System/Configuration/Other
@@ -18,7 +18,7 @@ BuildRequires:  perl-XML-Parser
 Requires: 	pygtk2.0, gnome-python-gconf, gnome-python
 Requires: 	python-gnome-menus
 Obsoletes:      smeg
-Provides:       smeg %{version}-%{release}
+Provides:       smeg = %{version}-%{release}
 
 %description
 Alacarte is a menu editor for GNOME that lets you get things done,
