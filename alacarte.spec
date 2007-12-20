@@ -8,6 +8,7 @@ License:        GPL
 URL:            http://www.realistanew.com/projects/alacarte/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%name-icons.tar.bz2
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
 
 BuildRequires:  pygtk2.0-devel
