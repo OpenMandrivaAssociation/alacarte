@@ -1,6 +1,6 @@
 Name:           alacarte
-Version:        0.11.3
-Release:        %mkrel 4
+Version:        0.11.4
+Release:        %mkrel 1
 Summary:        Simple menu editor for Gnome
 
 Group:          System/Configuration/Other
