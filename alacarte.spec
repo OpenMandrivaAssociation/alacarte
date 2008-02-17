@@ -40,12 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang %name --with-gnome
 
-# move from /usr/lib to /usr/lib
-%if %_lib != lib
-mkdir -p %buildroot%_prefix/lib
-mv %buildroot%_libdir/python* %buildroot%_prefix/lib
-%endif
-
 desktop-file-install --vendor="" \
   --add-category="GNOME" \
   --add-category="X-MandrivaLinux-System-Configuration-Other" \
