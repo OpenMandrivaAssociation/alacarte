@@ -1,5 +1,5 @@
 Name:           alacarte
-Version:        0.11.4
+Version:        0.11.5
 Release:        %mkrel 1
 Summary:        Simple menu editor for Gnome
 
