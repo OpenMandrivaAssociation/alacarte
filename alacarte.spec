@@ -1,24 +1,28 @@
+Summary:        Simple menu editor for Gnome
 Name:           alacarte
 Version:        0.11.5
 Release:        %mkrel 3
-Summary:        Simple menu editor for Gnome
-
 Group:          System/Configuration/Other
 License:        GPL
 URL:            http://www.realistanew.com/projects/alacarte/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%name-icons.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
-
-BuildRequires:  pygtk2.0-devel
-BuildRequires: 	desktop-file-utils
-BuildRequires:  gnome-menus-devel >= 2.15.4.1
-BuildRequires:  perl-XML-Parser
-Requires: 	pygtk2.0, gnome-python-gconf, gnome-python
-Requires: 	python-gnome-menus
+BuildRequires:	desktop-file-utils
+BuildRequires:	gettext
+BuildRequires:	gnome-menus-devel >= 2.15.4.1
+BuildRequires:	perl-XML-Parser
+BuildRequires:	pkg-config
+BuildRequires:	pygtk2.0-devel >= 2.8.0
+BuildRequires:	python
+BuildRequires:	python-devel
+Requires:	pygtk2.0 >= 2.8.0
+Requires:	gnome-python-gconf
+Requires:	gnome-python
+Requires:	python-gnome-menus
 Obsoletes:      smeg
 Provides:       smeg = %{version}-%{release}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Alacarte is a menu editor for GNOME that lets you get things done,
@@ -49,17 +53,13 @@ desktop-file-install --vendor="" \
 %__install -D -m 644 %{name}32.png %buildroot/%_iconsdir/%name.png
 %__install -D -m 644 %{name}16.png %buildroot/%_miconsdir/%name.png
 
-%if %mdkversion < 200900
 %post
 %update_menus
 %update_icon_cache hicolor
-%endif
 
-%if %mdkversion < 200900
 %postun
 %clean_menus
 %clean_icon_cache hicolor
-%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -74,5 +74,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/*
 %{_iconsdir}/*/%name.png
 %{_iconsdir}/%name.png
-
-
