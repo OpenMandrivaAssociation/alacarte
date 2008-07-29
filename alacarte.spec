@@ -11,11 +11,8 @@ BuildArch:      noarch
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
 BuildRequires:	gnome-menus-devel >= 2.15.4.1
-BuildRequires:	perl-XML-Parser
-BuildRequires:	pkgconfig
+BuildRequires:	intltool
 BuildRequires:	pygtk2.0-devel >= 2.8.0
-BuildRequires:	python
-BuildRequires:	python-devel
 Requires:	pygtk2.0 >= 2.8.0
 Requires:	gnome-python-gconf
 Requires:	gnome-python
