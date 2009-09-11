@@ -1,6 +1,7 @@
+%define gnome_menus 2.27.92
 Summary:        Simple menu editor for Gnome
 Name:           alacarte
-Version:        0.12.1
+Version:        0.12.3
 Release:        %mkrel 1
 Group:          System/Configuration/Other
 License:        LGPLv2+
@@ -10,13 +11,13 @@ Source1:	%name-icons.tar.bz2
 BuildArch:      noarch
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
-BuildRequires:	gnome-menus-devel >= 2.15.4.1
+BuildRequires:	gnome-menus-devel >= %gnome_menus
 BuildRequires:	intltool
 BuildRequires:	pygtk2.0-devel >= 2.8.0
 Requires:	pygtk2.0 >= 2.8.0
 Requires:	gnome-python-gconf
 Requires:	gnome-python
-Requires:	python-gnome-menus
+Requires:	python-gnome-menus >= %gnome_menus
 Obsoletes:      smeg
 Provides:       smeg = %{version}-%{release}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
