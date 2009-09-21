@@ -1,7 +1,7 @@
 %define gnome_menus 2.27.92
 Summary:        Simple menu editor for Gnome
 Name:           alacarte
-Version:        0.12.3
+Version:        0.12.4
 Release:        %mkrel 1
 Group:          System/Configuration/Other
 License:        LGPLv2+
