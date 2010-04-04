@@ -1,14 +1,14 @@
 %define gnome_menus 2.27.92
-Summary:        Simple menu editor for Gnome
-Name:           alacarte
-Version:        0.12.4
-Release:        %mkrel 2
-Group:          System/Configuration/Other
-License:        LGPLv2+
-URL:            http://www.realistanew.com/projects/alacarte/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+Summary:	Simple menu editor for Gnome
+Name:		alacarte
+Version:	0.13.1
+Release:	%mkrel 1
+Group:		System/Configuration/Other
+License:	LGPLv2+
+URL:		http://www.realistanew.com/projects/alacarte/
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%name-icons.tar.bz2
-BuildArch:      noarch
+BuildArch:	noarch
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
 BuildRequires:	gnome-menus-devel >= %gnome_menus
@@ -18,9 +18,9 @@ Requires:	pygtk2.0 >= 2.8.0
 Requires:	gnome-python-gconf
 Requires:	gnome-python
 Requires:	python-gnome-menus >= %gnome_menus
-Obsoletes:      smeg
-Provides:       smeg = %{version}-%{release}
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Obsoletes:	smeg
+Provides:	smeg = %{version}-%{release}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Alacarte is a menu editor for GNOME that lets you get things done,
@@ -32,8 +32,8 @@ Just click and type to edit, add, and delete any menu entry.
 %setup -q -a1
 
 %build
-./configure --prefix=%_prefix --libdir=%_prefix/lib
-
+%configure2_5x -prefix=%_prefix --libdir=%_prefix/lib
+#./configure --prefix=%_prefix --libdir=%_prefix/lib
 %make
 
 %install
