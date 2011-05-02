@@ -2,7 +2,7 @@
 Summary:	Simple menu editor for Gnome
 Name:		alacarte
 Version:	0.13.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		System/Configuration/Other
 License:	LGPLv2+
 URL:		http://www.realistanew.com/projects/alacarte/
