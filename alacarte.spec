@@ -37,7 +37,7 @@ Just click and type to edit, add, and delete any menu entry.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %name --with-gnome
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 desktop-file-install --vendor="" \
   --add-category="GNOME" \
   --add-category="X-MandrivaLinux-System-Configuration-Other" \
-  --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
+  --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 %__install -D -m 644 %{name}48.png %buildroot/%_liconsdir/%name.png
 %__install -D -m 644 %{name}32.png %buildroot/%_iconsdir/%name.png
@@ -60,7 +60,7 @@ desktop-file-install --vendor="" \
 %clean_icon_cache hicolor
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
