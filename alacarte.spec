@@ -12,7 +12,7 @@ BuildArch:	noarch
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(libgnome-menu-3.0)
+BuildRequires:	pkgconfig(libgnome-menu)
 BuildRequires:	pkgconfig(pygtk-2.0)
 
 Requires:	pygtk2.0
