@@ -1,7 +1,7 @@
 Summary:	Simple menu editor for Gnome
 Name:		alacarte
-Version:	0.13.3
-Release:	2
+Version:	3.10.0
+Release:	1
 Group:		System/Configuration/Other
 License:	LGPLv2+
 URL:		http://www.realistanew.com/projects/alacarte/
@@ -12,13 +12,11 @@ BuildArch:	noarch
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(libgnome-menu-3.0)
-BuildRequires:	pkgconfig(pygtk-2.0)
+BuildRequires:  pkgconfig(libgnome-menu-3.0)
+BuildRequires:	pkgconfig(pygobject-3.0)
 
-Requires:	pygtk2.0
-Requires:	gnome-python-gconf
-Requires:	gnome-python
-Requires:	python-gnome-menus
+Requires:	typelib(GMenu) = 3.0
+Requires:	typelib(Gtk) = 3.0
 
 %description
 Alacarte is a menu editor for GNOME that lets you get things done,
