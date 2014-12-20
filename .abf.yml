@@ -1,3 +1,5 @@
-sources:
+removed_sources:
   alacarte-3.10.0.tar.xz: 95c81d943f0445ee3c356b436ec4514fee0c204b
+sources:
+  alacarte-3.11.91.tar.xz: b200e7e9721c18c83ab2983234edf8986962d335
   alacarte-icons.tar.bz2: 876e2722d68ff0a73561b61dc371411c252a7959
