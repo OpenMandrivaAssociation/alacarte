@@ -7,8 +7,8 @@ License:	LGPLv2+
 URL:		http://www.realistanew.com/projects/alacarte/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 
-BuildRequires:  python
-BuildRequires:  pkgconfig(python)
+BuildRequires:  python3
+BuildRequires:  pkgconfig(python3)
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
 BuildRequires:  pkgconfig(libgnome-menu-3.0)
