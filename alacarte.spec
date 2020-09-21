@@ -50,7 +50,6 @@ desktop-file-validate \
 
 %files -f %{name}.lang
 %doc README AUTHORS COPYING
-%{py2_puresitedir}/Alacarte
 %{_bindir}/alacarte
 %{_datadir}/applications/alacarte.desktop
 %{_datadir}/alacarte
