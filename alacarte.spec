@@ -60,4 +60,5 @@ desktop-file-validate \
 %{_datadir}/icons/hicolor/48x48/apps/alacarte.png
 %{_datadir}/icons/hicolor/256x256/apps/alacarte.png
 %{_mandir}/man1/alacarte.1.*
+%{python_sitelib}/Alacarte/*
 
