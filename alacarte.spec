@@ -1,11 +1,11 @@
 Summary:	Simple menu editor for Gnome
 Name:		alacarte
 Version:  3.44.3
-Release:	1
+Release:	2
 Group:		System/Configuration/Other
 License:	LGPLv2+
-URL:		http://www.realistanew.com/projects/alacarte/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+URL:		https://www.realistanew.com/projects/alacarte/
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 
 BuildRequires:  python
 BuildRequires:  pkgconfig(python)
