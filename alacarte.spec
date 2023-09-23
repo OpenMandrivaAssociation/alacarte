@@ -49,7 +49,7 @@ desktop-file-validate \
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc README AUTHORS COPYING
+%doc README* AUTHORS COPYING
 %{_bindir}/alacarte
 %{_datadir}/applications/alacarte.desktop
 %{_datadir}/alacarte
